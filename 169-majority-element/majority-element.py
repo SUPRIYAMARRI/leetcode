@@ -7,7 +7,7 @@ class Solution:
             else:
                 b[nums[i]]+=1
         for j,c in b.items():
-            if c > len(nums)//2:
+            if c > len(nums)/2:
                 return j
             
                 
