@@ -9,6 +9,5 @@ class Solution:
         for j,c in b.items():
             if c>=2:
                 return True
-        else:
-            return False
+        return False
         
