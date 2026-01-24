@@ -4,8 +4,7 @@ class Solution:
         s=[]
         L=0
         r=len(nums)-1
-        t=len(nums)//2
-        while L!=t:
+        while L<r:
             b=nums[L]+nums[r]
             s.append(b)
             L+=1
