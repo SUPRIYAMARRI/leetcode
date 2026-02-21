@@ -1,0 +1,88 @@
+
+1.Find the smallest number in an array 
+a=list(map(int,input().split()))
+b=a[0]
+for i in range(1,len(a)):
+  if a[i]<b:
+    b=a[i]
+print(b)
+8 7 6 3 5
+3
+2.Find the largest number in an array
+a=int(input())
+b=[]
+for i in range(a):
+  b.append(int(input()))
+c=b[0]
+for j in range(len(b)):
+  if c<b[j]:
+    c=b[j]
+print(c)
+5
+8
+3
+23
+98
+2
+98
+3.Second Smallest and Second Largest element in an array
+
+
+[ ]
+b=list(map(int,input().split()))
+a=sorted(set(b))
+print(a[1])
+print(a[-2])
+
+2 3 4 556 899 0
+2
+556
+4.Reverse a given array
+
+
+[ ]
+a=list(map(int,input().split()))
+a.reverse()
+print(*a)
+1 2 3 4 5 6
+6 5 4 3 2 1
+5.Count frequency of each element in an array
+
+
+[ ]
+a=list(map(int,input().split()))
+b={}
+for i in range(len(a)):
+  b[a[i]]=a.count(a[i])
+for j in b.values():
+  print(j,end=" ")
+  freq[num] = freq.get(num, 0) + 1
+1 1 2 2 3 3
+2 2 0 
+6.Rearrange array in increasing-decreasing order
+
+
+[7]
+19s
+a=list(map(int,input().split()))
+b=sorted(a)
+c=b[::-1]
+print(*b)
+print("".join(c))
+
+1 3 5 7 8
+1 3 5 7 8
+8 7 5 3 1
+7.Calculate sum of the elements of the array
+
+
+[8]
+3s
+a=list(map(int,input().split()))
+b=0
+for i in range(len(a)):
+  b+=a[i]
+print(b)
+
+1 2 3 4 5 6
+21
