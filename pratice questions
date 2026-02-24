@@ -1,0 +1,89 @@
+
+# Check if a number is Harshad number
+#A number is a Harshad number if it is divisible by the sum of its digits
+b=int(input())
+a=b
+total = 0
+while a > 0:
+    total += a % 10
+    a //= 10
+if b%total==0:
+  print("harshad")
+else:
+  print("not harshad")
+
+12
+harshad
+Condition Number Type , sum == number Perfect, sum > number Abundant, sum < number Deficient
+
+
+[14]
+#Check if the number is abundant number or not
+a=int(input())
+sum=0
+for i in range(1,a):
+  if a%i==0:
+    sum+=i
+if sum>a:
+  print("abundant")
+else:
+  print("")
+4
+not
+
+[7]
+#Sum of digits of a number
+a = int(input())
+total = 0
+while a > 0:
+    total += a % 10
+    a //= 10
+print(total)
+
+1234
+10
+
+[15]
+4s
+#Sum of numbers in the given range 
+a=int(input())
+b=int(input())
+sum=0
+for i in range(a,b+1):
+  sum+=i
+print(sum)
+1
+10
+55
+
+[16]
+1m
+#Program to add two fractions 
+num1 = int(input("Enter numerator 1: "))
+den1 = int(input("Enter denominator 1: "))
+num2 = int(input("Enter numerator 2: "))
+den2 = int(input("Enter denominator 2: "))
+num = num1 * den2 + num2 * den1
+den = den1 * den2
+print("Sum =", num, "/", den)
+Enter numerator 1: 3
+Enter denominator 1: 2
+Enter numerator 2: 4
+Enter denominator 2: 4
+Sum = 20 / 8
+
+[17]
+6s
+#Replace all 0s with 1s in a given integer
+a = int(input())
+result = 0
+place = 1
+while a > 0:
+    digit = a % 10
+    if digit == 0:
+        digit = 1
+    result += digit * place
+    place *= 10
+
+101100
+111111
