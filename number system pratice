@@ -1,0 +1,62 @@
+#Binary → Decimal
+a = input()
+b = int(a, 2)
+print(b)
+
+#Binary → Octal
+a = input()
+b = int(a, 2)
+print(oct(b)[2:])
+
+#Binary → Hexadecimal
+a = input()
+b = int(a, 2)
+print(hex(b)[2:].upper())
+
+#Decimal Conversions
+#Decimal → Binary
+a = int(input())
+b = bin(a)
+print(b[2:])
+
+#Decimal → Octal
+a = int(input())
+b = oct(a)
+print(b[2:])
+
+#Decimal → Hexadecimal
+a = int(input())
+b = hex(a)
+print(b[2:].upper())
+
+#Octal Conversions
+#Octal → Decimal
+a = input()
+b = int(a, 8)
+print(b)
+
+#Octal → Binary
+a = input()
+b = int(a, 8)
+print(bin(b)[2:])
+
+# Octal → Hexadecimal
+a = input()
+b = int(a, 8)
+print(hex(b)[2:].upper())
+
+#Hexadecimal Conversions
+#Hex → Decimal
+a = input()
+b = int(a, 16)
+print(b)
+
+#Hex → Binary
+a = input()
+b = int(a, 16)
+print(bin(b)[2:])
+
+Hex → Octal
+a = input()
+b = int(a, 16)
+print(oct(b)[2:])
